@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletContextAndConfigDemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <!-- ServletContext Parameters -->
+  <context-param>
+    <param-name>name</param-name>
+    <param-value>Sujata</param-value>
+  </context-param>
+  <context-param>
+    <param-name>technology</param-name>
+    <param-value>Java</param-value>
+  </context-param>
+  
+  <servlet>
+    <description></description>
+    <display-name>MyFirstServlet</display-name>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <servlet-class>com.sujata.demo.MyFirstServlet</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>Sumit</param-value>
+    </init-param>
+    <init-param>
+      <param-name>location</param-name>
+      <param-value>gurgaon</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <url-pattern>/First</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>MySecondServlet</display-name>
+    <servlet-name>MySecondServlet</servlet-name>
+    <servlet-class>com.sujata.demo.MySecondServlet</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>Karan</param-value>
+    </init-param>
+    <init-param>
+      <param-name>technology</param-name>
+      <param-value>servlets</param-value>
+    </init-param>
+    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MySecondServlet</servlet-name>
+    <url-pattern>/Second</url-pattern>
+  </servlet-mapping>
+</web-app>
