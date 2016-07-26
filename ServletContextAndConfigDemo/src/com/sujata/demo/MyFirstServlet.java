@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 //Giving Comments for Demonstrating Git
 public class MyFirstServlet extends HttpServlet {
+	//Something else for commit
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
